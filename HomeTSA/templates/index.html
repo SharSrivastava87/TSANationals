@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="../static/assets/img/favicon.png" rel="icon">
-  <link href="../static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="../static/img/favicon.png" rel="icon">
+  <link href="../static/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -56,7 +56,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <a href="index.html" class="logo me-auto"><img src="../static/assets/img/logo2.png" alt=""></a>
+      <a href="index.html" class="logo me-auto"><img src="../static/img/logo2.png" alt=""></a>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <h1 class="logo me-auto"><a href="index.html">Medicio</a></h1> -->
 
@@ -88,7 +88,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Try it out</span> Now</a>
+      <a href="/predict" class="appointment-btn scrollto"><span class="d-none d-md-inline">Try it out</span> Now</a>
 
     </div>
   </header><!-- End Header -->
@@ -97,36 +97,44 @@
 <section id="hero">
   <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-    <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+    <ol class="carousel-indicators" id="hero-carousel-indicators">
+      <li data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#heroCarousel" data-bs-slide-to="1"></li>
+      <li data-bs-target="#heroCarousel" data-bs-slide-to="2"></li>
+      <li data-bs-target="#heroCarousel" data-bs-slide-to="3"></li>
+      <li data-bs-target="#heroCarousel" data-bs-slide-to="4"></li>
+      <li data-bs-target="#heroCarousel" data-bs-slide-to="5"></li>
+      <li data-bs-target="#heroCarousel" data-bs-slide-to="6"></li>
+    </ol>
 
     <div class="carousel-inner" role="listbox">
 
       <!-- Slide 1 -->
-      <div class="carousel-item active" style="background-image: url(/Users/sharvaysrivastava/PycharmProjects/TSANationals/HomeTSA/static/assets/img/slide/1.png)">
+      <div class="carousel-item active" style="background-image: url(/img/slide/1.png)">
       </div>
 
       <!-- Slide 2 -->
-      <div class="carousel-item" style="background-image: url(/Users/sharvaysrivastava/PycharmProjects/TSANationals/HomeTSA/static/assets/img/slide/2.png)">
+      <div class="carousel-item" style="background-image: url(/img/slide/2.png)">
       </div>
 
       <!-- Slide 3 -->
-      <div class="carousel-item" style="background-image: url(/Users/sharvaysrivastava/PycharmProjects/TSANationals/HomeTSA/static/assets/img/slide/3.png)">
+      <div class="carousel-item" style="background-image: url(/img/slide/3.png)">
       </div>
 
       <!-- Slide 4 -->
-      <div class="carousel-item" style="background-image: url(/Users/sharvaysrivastava/PycharmProjects/TSANationals/HomeTSA/static/assets/img/slide/4.png)">
+      <div class="carousel-item" style="background-image: url(/img/slide/4.png)">
       </div>
 
       <!-- Slide 5 -->
-      <div class="carousel-item" style="background-image: url(/Users/sharvaysrivastava/PycharmProjects/TSANationals/HomeTSA/static/assets/img/slide/5.png)">
+      <div class="carousel-item" style="background-image: url(/img/slide/5.png)">
       </div>
 
       <!-- Slide 6 -->
-      <div class="carousel-item" style="background-image: url(/Users/sharvaysrivastava/PycharmProjects/TSANationals/HomeTSA/static/assets/img/slide/6.png)">
+      <div class="carousel-item" style="background-image: url(/img/slide/6.png)">
       </div>
 
       <!-- Slide 7 -->
-      <div class="carousel-item" style="background-image: url(/Users/sharvaysrivastava/PycharmProjects/TSANationals/HomeTSA/static/assets/img/slide/7.png)">
+      <div class="carousel-item" style="background-image: url(/img/slide/7.png)">
       </div>
 
     </div>
@@ -216,7 +224,7 @@
 
         <div class="row">
           <div class="col-lg-6" data-aos="fade-right">
-            <img src="../static/assets/img/about.jpg" class="img-fluid" alt="">
+            <img src="../static/img/about.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>AI software Derm Engine for TSA nationals. </h3>
@@ -316,7 +324,7 @@
               <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
             </div>
           </div>
-          <div class="image col-lg-6 order-1 order-lg-2" style='background-image: url("../static/assets/img/features.jpg");' data-aos="zoom-in"></div>
+          <div class="image col-lg-6 order-1 order-lg-2" style='background-image: url("../static/img/features.jpg");' data-aos="zoom-in"></div>
         </div>
 
       </div>
@@ -342,7 +350,7 @@
                   Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="../static/assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <img src="../static/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
                 <h3>Saul Goodman</h3>
                 <h4>Ceo &amp; Founder</h4>
               </div>
@@ -355,7 +363,7 @@
                   Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="../static/assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <img src="../static/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
                 <h3>Sara Wilsson</h3>
                 <h4>Designer</h4>
               </div>
@@ -368,7 +376,7 @@
                   Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="../static/assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <img src="../static/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
                 <h3>Jena Karlis</h3>
                 <h4>Store Owner</h4>
               </div>
@@ -381,7 +389,7 @@
                   Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="../static/assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <img src="../static/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
                 <h3>Matt Brandon</h3>
                 <h4>Freelancer</h4>
               </div>
@@ -394,7 +402,7 @@
                   Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="../static/assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <img src="../static/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
                 <h3>John Larson</h3>
                 <h4>Entrepreneur</h4>
               </div>
@@ -421,7 +429,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
-                <img src="../static/assets/img/doctors/doctors-1.jpg" class="img-fluid" alt="">
+                <img src="../static/img/doctors/doctors-1.jpg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -439,7 +447,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="200">
               <div class="member-img">
-                <img src="../static/assets/img/doctors/doctors-2.jpg" class="img-fluid" alt="">
+                <img src="../static/img/doctors/doctors-2.jpg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -457,7 +465,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="300">
               <div class="member-img">
-                <img src="../static/assets/img/doctors/doctors-3.jpg" class="img-fluid" alt="">
+                <img src="../static/img/doctors/doctors-3.jpg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -475,7 +483,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="400">
               <div class="member-img">
-                <img src="../static/assets/img/doctors/doctors-4.jpg" class="img-fluid" alt="">
+                <img src="../static/img/doctors/doctors-4.jpg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -506,14 +514,14 @@
 
         <div class="gallery-slider swiper">
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><a class="gallery-lightbox" href="../static/assets/img/gallery/gallery-1.jpg"><img src="../static/assets/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="../static/assets/img/gallery/gallery-2.jpg"><img src="../static/assets/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="../static/assets/img/gallery/gallery-3.jpg"><img src="../static/assets/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="../static/assets/img/gallery/gallery-4.jpg"><img src="../static/assets/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="../static/assets/img/gallery/gallery-5.jpg"><img src="../static/assets/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="../static/assets/img/gallery/gallery-6.jpg"><img src="../static/assets/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="../static/assets/img/gallery/gallery-7.jpg"><img src="../static/assets/img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="../static/assets/img/gallery/gallery-8.jpg"><img src="../static/assets/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="../static/img/gallery/gallery-1.jpg"><img src="../static/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="../static/img/gallery/gallery-2.jpg"><img src="../static/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="../static/img/gallery/gallery-3.jpg"><img src="../static/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="../static/img/gallery/gallery-4.jpg"><img src="../static/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="../static/img/gallery/gallery-5.jpg"><img src="../static/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="../static/img/gallery/gallery-6.jpg"><img src="../static/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="../static/img/gallery/gallery-7.jpg"><img src="../static/img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="../static/img/gallery/gallery-8.jpg"><img src="../static/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
