@@ -21,5 +21,8 @@ from HomeTSA import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.homepage)
+    path('', views.homepage),
+    path('predict/', views.predict_disease, name='predict_disease'),
+
+
 ]
