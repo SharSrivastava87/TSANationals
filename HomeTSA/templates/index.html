@@ -93,62 +93,124 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-<section id="hero">
-  <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-    <ol class="carousel-indicators" id="hero-carousel-indicators">
-      <li data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></li>
-      <li data-bs-target="#heroCarousel" data-bs-slide-to="1"></li>
-      <li data-bs-target="#heroCarousel" data-bs-slide-to="2"></li>
-      <li data-bs-target="#heroCarousel" data-bs-slide-to="3"></li>
-      <li data-bs-target="#heroCarousel" data-bs-slide-to="4"></li>
-      <li data-bs-target="#heroCarousel" data-bs-slide-to="5"></li>
-      <li data-bs-target="#heroCarousel" data-bs-slide-to="6"></li>
-    </ol>
 
-    <div class="carousel-inner" role="listbox">
 
-      <!-- Slide 1 -->
-      <div class="carousel-item active" style="background-image: url(/img/slide/1.png)">
-      </div>
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* CSS for the carousel */
+    .carousel-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
 
-      <!-- Slide 2 -->
-      <div class="carousel-item" style="background-image: url(/img/slide/2.png)">
-      </div>
+    .carousel-slide {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
 
-      <!-- Slide 3 -->
-      <div class="carousel-item" style="background-image: url(/img/slide/3.png)">
-      </div>
+    .carousel-image {
+      flex: 1 0 100%;
+      width: 100%;
+      max-height: 700px; /* Adjust the max-height value as per your requirement */
+      object-fit: contain;
+      border: 2px solid #ccc; /* Add border style */
+      border-radius: 4px; /* Add border radius */
+      margin: 4px; /* Add margin to create spacing between images */
+    }
 
-      <!-- Slide 4 -->
-      <div class="carousel-item" style="background-image: url(/img/slide/4.png)">
-      </div>
+    /* CSS for the carousel arrows */
+    .carousel-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      color: #333;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
 
-      <!-- Slide 5 -->
-      <div class="carousel-item" style="background-image: url(/img/slide/5.png)">
-      </div>
+    .carousel-arrow-left {
+      left: 10px;
+    }
 
-      <!-- Slide 6 -->
-      <div class="carousel-item" style="background-image: url(/img/slide/6.png)">
-      </div>
+    .carousel-arrow-right {
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div style="height: 121px;"></div>
+  <div class="carousel-container">
+    <div class="carousel-slide">
 
-      <!-- Slide 7 -->
-      <div class="carousel-item" style="background-image: url(/img/slide/7.png)">
-      </div>
-
+      {% load static %}
+      <img class="carousel-image" src="{% static 'img/1.png' %}" alt="Image 1">
+      {% load static %}
+      <img class="carousel-image" src="{% static 'img/2.png' %}" alt="Image 1">
+      {% load static %}
+      <img class="carousel-image" src="{% static 'img/3.png' %}" alt="Image 1">
+      {% load static %}
+      <img class="carousel-image" src="{% static 'img/4.png' %}" alt="Image 1">
+      {% load static %}
+      <img class="carousel-image" src="{% static 'img/5.png' %}" alt="Image 1">
+      {% load static %}
+      <img class="carousel-image" src="{% static 'img/6.png' %}" alt="Image 1">
+      {% load static %}
+      <img class="carousel-image" src="{% static 'img/7.png' %}" alt="Image 1">
+      {% load static %}
+      <img class="carousel-image" src="{% static 'img/8.png' %}" alt="Image 1">
+      {% load static %}
+      <img class="carousel-image" src="{% static 'img/9.png' %}" alt="Image 1">
     </div>
-
-    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-    </a>
-
-    <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-      <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-    </a>
-
+    <div class="carousel-arrow carousel-arrow-left" onclick="carouselSlideHandler(-1)">
+      &larr;
+    </div>
+    <div class="carousel-arrow carousel-arrow-right" onclick="carouselSlideHandler(1)">
+      &rarr;
+    </div>
   </div>
-</section><!-- End Hero -->
+
+  <script>
+    // JavaScript for the carousel
+    const carouselSlide = document.querySelector('.carousel-slide');
+    const carouselImages = document.querySelectorAll('.carousel-image');
+
+    let counter = 1;
+    const slideWidth = carouselImages[0].clientWidth;
+    const slideCount = carouselImages.length;
+
+    // Set initial position
+    carouselSlide.style.transform = `translateX(${-slideWidth * counter}px)`;
+
+    // Function to handle carousel sliding
+    function carouselSlideHandler(direction) {
+      counter += direction;
+
+      if (counter < 1) {
+        counter = slideCount - 2;
+      } else if (counter >= slideCount - 1) {
+        counter = 1;
+      }
+
+      carouselSlide.style.transition = 'transform 0.5s ease-in-out';
+      carouselSlide.style.transform = `translateX(${-slideWidth * counter}px)`;
+    }
+  </script>
+</body>
+</html>
+
 
 
 
@@ -205,7 +267,7 @@
         <div class="text-center">
           <h3>In an emergency? Try our software NOW for free.</h3>
           <p> We prioritize our users so we offer a free trial to get a grip of our software and safe lives.</p>
-          <a class="cta-btn scrollto" href="#appointment">Use the Software</a>
+          <a class="cta-btn scrollto" href="/predict">Use the Software</a>
         </div>
 
       </div>
