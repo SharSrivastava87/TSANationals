@@ -123,30 +123,68 @@
       right: 10px;
     }
   </style>
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* CSS styles for the carousel */
+    .carousel-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .carousel-slide {
+      display: flex;
+      width: 100%;
+    }
+
+    .carousel-image {
+      width: 100%;
+      height: auto;
+    }
+
+    .carousel-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    .carousel-arrow-left {
+      left: 10px;
+    }
+
+    .carousel-arrow-right {
+      right: 10px;
+    }
+  </style>
 </head>
 <body>
   <div style="height: 121px;"></div>
   <div class="carousel-container">
     <div class="carousel-slide">
-
       {% load static %}
       <img class="carousel-image" src="{% static 'img/1.png' %}" alt="Image 1">
       {% load static %}
-      <img class="carousel-image" src="{% static 'img/2.png' %}" alt="Image 1">
+      <img class="carousel-image" src="{% static 'img/2.png' %}" alt="Image 2">
       {% load static %}
-      <img class="carousel-image" src="{% static 'img/3.png' %}" alt="Image 1">
+      <img class="carousel-image" src="{% static 'img/3.png' %}" alt="Image 3">
       {% load static %}
-      <img class="carousel-image" src="{% static 'img/4.png' %}" alt="Image 1">
+      <img class="carousel-image" src="{% static 'img/4.png' %}" alt="Image 4">
       {% load static %}
-      <img class="carousel-image" src="{% static 'img/5.png' %}" alt="Image 1">
+      <img class="carousel-image" src="{% static 'img/5.png' %}" alt="Image 5">
       {% load static %}
-      <img class="carousel-image" src="{% static 'img/6.png' %}" alt="Image 1">
+      <img class="carousel-image" src="{% static 'img/6.png' %}" alt="Image 6">
       {% load static %}
-      <img class="carousel-image" src="{% static 'img/7.png' %}" alt="Image 1">
+      <img class="carousel-image" src="{% static 'img/7.png' %}" alt="Image 7">
       {% load static %}
-      <img class="carousel-image" src="{% static 'img/8.png' %}" alt="Image 1">
+      <img class="carousel-image" src="{% static 'img/8.png' %}" alt="Image 8">
       {% load static %}
-      <img class="carousel-image" src="{% static 'img/9.png' %}" alt="Image 1">
+      <img class="carousel-image" src="{% static 'img/9.png' %}" alt="Image 9">
+      {% load static %}
+      <img class="carousel-image" src="{% static 'img/1.png' %}" alt="Image 1"> <!-- Duplicate of the first image -->
     </div>
     <div class="carousel-arrow carousel-arrow-left" onclick="carouselSlideHandler(-1)">
       &larr;
@@ -161,7 +199,7 @@
     const carouselSlide = document.querySelector('.carousel-slide');
     const carouselImages = document.querySelectorAll('.carousel-image');
 
-    let counter = 1;
+    let counter = 0; // Set counter to 0 to start with the first image
     const slideWidth = carouselImages[0].clientWidth;
     const slideCount = carouselImages.length;
 
@@ -172,10 +210,10 @@
     function carouselSlideHandler(direction) {
       counter += direction;
 
-      if (counter < 1) {
+      if (counter < 0) {
         counter = slideCount - 2;
       } else if (counter >= slideCount - 1) {
-        counter = 1;
+        counter = 0;
       }
 
       carouselSlide.style.transition = 'transform 0.5s ease-in-out';
@@ -183,6 +221,7 @@
     }
   </script>
 </body>
+</html>
 
 
 
