@@ -561,3 +561,8 @@ for epoch in range(num_epochs):
         print(f'Test Accuracy: {accuracy:.2f}%')
 torch.save(model.state_dict(), "new.pth")
 ```
+
+
+
+
+
