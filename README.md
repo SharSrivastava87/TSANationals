@@ -1,5 +1,6 @@
 # DermEngine
-## Software Development at Louisville, Kentucky
+## Software Development at Louisville, Kentucky 
+## Team ID: 
 ## The development of the AI:
 
 ---Version one of the AI model---
