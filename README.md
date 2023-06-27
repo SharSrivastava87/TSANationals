@@ -1,5 +1,5 @@
 # DermEngine
-## Software Development at Louisville Kentucky By: Sharvay Srivastava, Siddharth Singh, Sanmay Sarada, and Siddharth Radhakrishnan
+## Software Development at Louisville, Kentucky
 ## The development of the AI:
 
 ---Version one of the AI model---
